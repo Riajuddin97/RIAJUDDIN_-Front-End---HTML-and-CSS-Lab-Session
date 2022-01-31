@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO OF Dropdown</title>
+
+    <style>
+        /*inline styles to webpage*/
+        /*body style with auto increment values*/
+        body {
+            height: auto;
+            margin: 0%;
+        }
+
+        /* Header styles  */
+        header h1{
+            background-color: rgb(0, 0, 167);
+            margin: 0%;
+            padding: 20px;
+            text-align: center;
+            font-family: sans-serif;
+            text-shadow: 55px;
+        }
+
+        h1{
+            color: white;
+            font-size: xx-large;
+        }
+
+        /* navigation tollbar styles*/
+        #navigate {
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
+
+        /* meny styles */
+        .menu {
+            margin: 0%;
+            background-color: rgb(255, 255, 0);
+        }
+
+        /* anchor tag styles*/
+        .menu li a {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        /* li styles*/
+        .menu li {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        /* li Hover styles*/
+        .menu li:hover {
+            background-color: rgba(244, 185, 39, 0.735);
+        }
+
+        /* Li right arrangement styles*/
+        .menu li:nth-child(2):hover #DD_1,
+        .menu li:nth-child(3):hover #DD_2 {
+            display: block;
+        }
+
+        /* sub menu un-0rdered list styles*/
+        #DD_1,
+        #DD_2 {
+            position: absolute;
+            width: auto;
+            max-width: 150px;
+            display: none;
+            top: 40px;
+            background-color: rgba(191, 115, 0, 0.845);
+            padding: 0%;
+        }
+
+        /* un-ordered list li styles*/
+        #DD_1 li,
+        #DD_2 li {
+            display: block;
+        }
+
+        /* ul li Hover styles */
+        #DD_1 li:hover,
+        #DD_2 li:hover {
+            background-color: rgba(128, 77, 1, 0.845);
+        }
+
+        /* anchor tag styles with in sub menu */
+        #DD_1 li a,
+        #DD_2 li a {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+
+    <nav id="navigate">
+        <ul class="menu">
+            <li> <a href="#"> link1 </a></li>
+            <li><a href="#">link2</a>
+                <ul id="DD_1">
+                    <li> <a href="#">DD_link1</a> </li>
+                    <li> <a href="#">DD_link2</a> </li>
+                    <li> <a href="#">DD_link3</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">link3</a>
+                <ul id="DD_2">
+                    <li> <a href="#">DD_link1</a> </li>
+                    <li> <a href="#">DD_link2</a> </li>
+                    <li> <a href="#">DD_link3</a> </li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+
+</body>
+
+</html>
